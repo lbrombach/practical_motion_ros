@@ -184,8 +184,6 @@ Waypoint_server_client.cpp is intended to provide examples for how to use the se
 <br><hr>
 
 
-
 ## Contributing, bug reports, etc:
-Please use the issues and bug reporting system for bugs and feature requests. With many projects, a job, a family, I can't promise
-to get to feature requests very quickly, but am definitely listening for feedback to make improvement and will prioritize bugs. I am open to
-pull requests if you'd like to contribute. I can be contacted by email at lbrombach2@gmail.com. 
+If you find my tutorials and projects helpful, consider supporting the development of this and others at [BuyMeACoffee](https://www.buymeacoffee.com/practicalrobot).
+Please use the issues and bug reporting system for bugs and feature requests. With many projects, a job, a family, I can't promise to get to feature requests very quickly, but am definitely listening for feedback to make improvement and will prioritize bugs. I am open to pull requests if you'd like to contribute. I can be contacted by email at lbrombach2@gmail.com. 
