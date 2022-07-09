@@ -3,10 +3,11 @@ A collection of ROS packages that handle motion matters such as following, wande
 <br><br>
 
 ## Installation
-cd /catkin_ws/src
-git clone https://github.com/lbrombach/practical_motion_ros
-cd ..
-catkin_make
+cd /catkin_ws/src <br>
+git clone https://github.com/lbrombach/practical_motion_ros  <br>
+cd .. <br>
+catkin_make 
+<br><br>
 
 ## Usage
 Please checkout the following individual package readme docs and check the [Practical Robotics YouTube channel](https://www.youtube.com/practicalrobotics) for tutorials. 
