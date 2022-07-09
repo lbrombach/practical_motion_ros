@@ -1,0 +1,6 @@
+float32 goalX
+float32 goalY
+---
+Waypoint wpt
+float32 confidence
+int8 requestRotation

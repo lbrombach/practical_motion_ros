@@ -1,0 +1,4 @@
+int16 index
+Waypoint wpt
+---
+int16 numWaypoints
