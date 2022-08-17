@@ -47,6 +47,7 @@ float getNum(string msg)
 		else
 			gotIt = true;
 	}
+	cin.ignore(1, '\n');
 	system("clear");
 	return x;
 }
@@ -129,7 +130,7 @@ int main(int argc, char **argv)
 			int lingerTime = (int)getNum("How many seconds should the robot linger at this waypoint? (int required) ");
 
 			// get current position data
-			listener.lookupTransform(frame, "base_link", ros::Time(0), tf);
+			listener.lookupTransform(frame, baseFrame, ros::Time(0), tf);
 
 			float x, y;
 			double roll, pitch, heading;
