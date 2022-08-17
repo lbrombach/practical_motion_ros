@@ -64,6 +64,7 @@ void save(vector<Waypoint> &waypoints, string fileName)
 	for (int i = 0; i < waypoints.size(); i++)
 	{
 		outFile << "#####" << endl
+				<< fixed
 				<< setprecision(2)
 				<< waypoints[i].getId() << endl
 				<< waypoints[i].getFrame() << endl
