@@ -230,6 +230,9 @@ target_link_libraries(waypoint_server_node ${catkin_LIBRARIES})
 add_executable(waypoint_saver src/waypoint_saver.cpp src/waypoint.cpp)
 target_link_libraries(waypoint_saver ${catkin_LIBRARIES})
 
+add_executable(waypoint_saver_rviz src/waypoint_saver_rviz.cpp src/waypoint.cpp)
+target_link_libraries(waypoint_saver_rviz ${catkin_LIBRARIES})
+
 add_executable(waypoint_server_client src/waypoint_server_client.cpp src/waypoint.cpp)
 target_link_libraries(waypoint_server_client ${catkin_LIBRARIES})
 

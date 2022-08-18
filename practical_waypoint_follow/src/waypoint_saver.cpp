@@ -64,6 +64,7 @@ void save(vector<Waypoint> &waypoints, string fileName)
 	for (int i = 0; i < waypoints.size(); i++)
 	{
 		outFile << "#####" << endl
+				<< fixed
 				<< setprecision(2)
 				<< waypoints[i].getId() << endl
 				<< waypoints[i].getFrame() << endl
@@ -74,7 +75,7 @@ void save(vector<Waypoint> &waypoints, string fileName)
 				<< waypoints[i].getLingerTime() << endl;
 	}
 	outFile.close();
-	cout << "saving and exiting" << endl;
+	cout << "saving and exiting to: " << path << endl;
 }
 
 int main(int argc, char **argv)
@@ -84,9 +85,10 @@ int main(int argc, char **argv)
 	ros::NodeHandle node("~");
 
 	// get user inputs
-	string fileName = getInput("Enter filename to save to. Do not include path.  : ");
+	string fileName = getInput("Enter filename to save to (must end with .txt). Do not include path.  : ");
 	string baseFrame = getInput("Enter the robots base frame id (ie: base_frame, base_link, etc) : ");
 	string frame = getInput("Enter frame of waypoints (ie: map, utm, odom, base_link): ");
+	system("clear");
 
 	// The container for hte waypoints
 	vector<Waypoint> waypoints;

@@ -163,6 +163,29 @@ Waypoint_saver takes no arguments or parameters and is easily started from the c
 
 <br><hr>
 
+# waypoint_saver_rviz
+**Description**
+
+A command line + RVIZ tool to save waypoints to a file for use by the rest of this package.  Upon exiting, the waypoint list is formatted and saved for use by waypoint_follow_node or waypoint_server_node. 
+
+**Starting**
+
+Waypoint_saver_rviz takes no arguments or parameters and is easily started from the command line with rosrun. 
+- rosrun practical_waypoint_follow waypoint_saver_rviz
+
+
+**Subscribes**
+- /move_base_simple/goal (geometry_msgs::PoseStamped) - This is generated when you click "2D Nav Goal" in RVIZ. Don't forget to kill move_base or disable your motors or the base will move when you click. This was chosen over "clicked_point" so a desired goal heading could also be captured.
+
+**Publishes**
+- none
+
+**Parameters**
+- none
+
+
+<br><hr>
+
 # waypoint_server_client
 **Description**
 
